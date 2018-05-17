@@ -1,0 +1,27 @@
+profiles: DEV
+
+server:
+    port: 8080
+    contextPath: /reporting
+spring:
+    datasource:
+        jndi-name: jdbc/mssql-wf
+    scheduling:
+        cronExp:
+            process: 0/10 * * * * *
+            upload: 0 * * * * *
+            archive: 0 0 0 * * *
+directory:
+    source: C:\temp\SAPData\Data\
+    archive: C:\temp\SAPData\Zips\
+    temp: C:\temp\SAPData\Tmp\
+ftp:
+    target:
+        serverUrl: 10.79.34.93
+        port: 2121
+        username: anonymous
+        password: 
+        certificate: 
+zip:
+    password: Linde
+wincp.path: C:\Program Files (x86)\WinSCP\WinSCP.com

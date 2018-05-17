@@ -1,0 +1,12 @@
+2018-05-03 10:18:14 INFO [main] c.k.r.App [App:48] - Starting App on NB4CN2620002 with PID 13568 (C:\Users\cn40580\IdeaProjects\reporting\target\classes started by cn40580 in C:\Users\cn40580\IdeaProjects\reporting)
+2018-05-03 10:18:14 DEBUG [main] c.k.r.App [App:51] - Running with Spring Boot v1.3.6.RELEASE, Spring v4.2.7.RELEASE
+2018-05-03 10:18:14 INFO [main] c.k.r.App [App:660] - No active profile set, falling back to default profiles: default
+2018-05-03 10:18:15 INFO [background-preinit] o.h.v.i.u.Version [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.2.4.Final
+2018-05-03 10:18:25 INFO [main] o.a.t.u.n.NioSelectorPool [org.apache.tomcat.util.net.NioSelectorPool:180] - Using a shared selector for servlet write/read
+2018-05-03 10:18:28 INFO [main] c.k.r.App [App:57] - Started App in 14.664 seconds (JVM running for 16.066)
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:21] - Executing job groupFiles() start...
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:23] - Executing job groupFiles() end!
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:24] - Executing job validateFiles() start...
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:26] - Executing job validateFiles() end!
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:27] - Executing job compressFiles() start...
+2018-05-03 10:18:30 DEBUG [pool-2-thread-1] c.k.r.s.ReportingScheduler [ReportingScheduler:29] - Executing job compressFiles() end!

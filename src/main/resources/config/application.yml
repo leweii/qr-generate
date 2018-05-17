@@ -1,0 +1,31 @@
+profiles: PROD
+
+server:
+    port: 8080
+    contextPath: /reporting
+spring:
+    datasource:
+        jndi-name: jdbc/mssql-wf
+    scheduling:
+        cronExp:
+            process: 0/10 * * * * *
+            upload: 0 * * * * *
+            archive: 0 0 0 * * *
+directory:
+    source: E:\SapData\data\
+    archive: E:\SapData\zips\
+    temp: E:\SapData\tmp\
+    input: C:\Users\cn40580\IdeaProjects\qr-generate\src\main\resources\input_qr\
+    input_done: C:\Users\cn40580\IdeaProjects\qr-generate\src\main\resources\input_qr\done\
+    module: C:\Users\cn40580\IdeaProjects\qr-generate\src\main\resources\module\
+    output: C:\Users\cn40580\IdeaProjects\qr-generate\src\main\resources\output\
+ftp:
+    target:
+        serverUrl: 172.79.0.12
+        port: 21
+        username: lindechina
+        password: Linde5533800!
+        certificate: bf:08:23:2c:19:d1:87:ed:40:15:1e:0b:a7:06:4c:96:f1:52:83:cd
+zip:
+    password: Linde
+wincp.path: C:\Program Files (x86)\WinSCP\WinSCP.com
