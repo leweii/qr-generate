@@ -110,7 +110,7 @@ public class QRCodeUtilBk {
                 int B = (rgb & 0xff);
                 if (((255 - R) < 30) && ((255 - G) < 30) && ((255 - B) < 30)) {
                     //背景颜色设置
-                    rgb = ((alpha + 1) << 24) | (rgb & 0XFFFEE275);
+                    rgb = ((alpha + 1) << 24) | (rgb & 0XFFFFD700);
                 }
                 bufferedImage.setRGB(j2, j1, rgb);
             }
@@ -194,6 +194,7 @@ public class QRCodeUtilBk {
      */
     private static void encode(String content, String backgroundPath, String destPath, boolean needCompress) throws Exception {
         BufferedImage image = QRCodeUtilBk.createImage(content, backgroundPath, needCompress);
+
         if (mkdirs(destPath)) {
             String file = new Random().nextInt(99999999) + ".jpg";
             ImageIO.write(image, FORMAT_NAME, new File(destPath + "/" + file));

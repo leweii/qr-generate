@@ -112,7 +112,7 @@ public class FileUtil {
      * @param fileList
      * @return
      */
-    public static List<File> getAllFiles(String folderName, boolean includeSubFolder, List<File> fileList) {
+    private static List<File> getAllFiles(String folderName, boolean includeSubFolder, List<File> fileList) {
 
         if (fileList == null) {
             fileList = new ArrayList<File>();
